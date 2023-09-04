@@ -1,0 +1,56 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  color-scheme: light dark;
+}
+
+body {
+  overflow: hidden;
+  margin: 0;
+  font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+  font-size: 1.125rem;
+  line-height: 1.7;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  max-width: 61.674ch;
+  line-height: 1.5;
+  overflow-wrap: break-word;
+  text-wrap: balance;
+  word-break: keep-all;
+}
+
+img,
+picture,
+svg,
+canvas,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+.viewport {
+  height: 100dvh;
+  overflow-x: auto;
+  overflow-y: scroll;
+}
+
+.container {
+  width: 90rem;
+  /* margin-inline: auto; */
+  /* padding-inline: 1.25rem; */
+  /* 졸전 마진 - 양옆 없앰 */
+}
+section {
+  margin-top: 10px;
+  font-size: 16px;
+}

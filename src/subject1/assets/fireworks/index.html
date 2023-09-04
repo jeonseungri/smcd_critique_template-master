@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link
+      href="//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css"
+      rel="stylesheet"
+      type="text/css" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/p5@latest/lib/p5.js"></script>
+    <script src="./script/db.js" defer></script>
+    <script src="./script/domSetting.js" defer></script>
+    <script src="./script/TrimLine.js" defer></script>
+    <script src="./script/Particle.js" defer></script>
+    <script src="./script/Fireworks.js" defer></script>
+    <script src="./script/sketch.js" defer></script>
+  </head>
+  <body>
+    <div class="viewport">
+      <div class="container container--width-fixed">
+        <!-- <nav></nav> -->
+        <main>
+          <section id="header">
+            <div class="center">
+              <h1 class="title"></h1>
+              <!-- <p></p> -->
+            </div>
+          </section>
+          <section>
+            <div class="center">
+              <div id="canvas"></div>
+            </div>
+          </section>
+          <section>
+            <div class="center">
+              <div>
+                <label for="timeSpeed">빠르기</label>
+                <input
+                  type="range"
+                  id="timeSpeed"
+                  name="빠르기"
+                  value="1"
+                  min="1"
+                  max="10"
+                  step="1" />
+              </div>
+            </div>
+          </section>
+        </main>
+        <footer></footer>
+      </div>
+    </div>
+  </body>
+</html>

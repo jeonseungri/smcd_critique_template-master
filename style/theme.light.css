@@ -1,0 +1,30 @@
+:root {
+  --bg: #fcfcfc;
+  --bg-variant: #eeeeee;
+  --txt: #1b1b1b;
+  --txt-variant: #474747;
+  --txt-primary: #4756b2;
+  --txt-secondary: #5b5d72;
+  --txt-tertiary: #77536d;
+  --btn-filled-bg: #4756b2;
+  --btn-filled-bg-hover: #5563b8;
+  --btn-filled-bg-focused: #5d6bbb;
+  --btn-filled-bg-pressed: #5d6bbb;
+  --btn-filled-bg-disabled: #949494;
+  --btn-filled-txt: #ffffff;
+  --btn-filled-txt-disabled: #dedede;
+  --btn-tonal-bg: #e0e1f9;
+  --btn-tonal-bg-hover: #d0d1e8;
+  --btn-tonal-bg-focused: #c8c9e0;
+  --btn-tonal-bg-pressed: #c8c9e0;
+  --btn-tonal-bg-disabled: #949494;
+  --btn-tonal-txt: #181a2c;
+  --btn-tonal-txt-disabled: #dedede;
+  --btn-elevated-bg: #f6f2f7;
+  --btn-elevated-bg-hover: #e9e6f2;
+  --btn-elevated-bg-focused: #e0dfee;
+  --btn-elevated-bg-pressed: #e0dfee;
+  --btn-elevated-bg-disabled: #949494;
+  --btn-elevated-txt: #4756b2;
+  --btn-elevated-txt-disabled: #dedede;
+}

@@ -1,0 +1,58 @@
+/* stylelint-disable selector-class-pattern */
+
+@use "base";
+@use "./component/btn";
+@import "./theme.dark.css" (prefers-color-scheme: dark);
+@import "./theme.light.css" (prefers-color-scheme: light);
+
+header {
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    text-align: center;
+
+    > * {
+      margin: 0;
+    }
+  }
+}
+
+nav {
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    align-items: center;
+    width: fit-content;
+    justify-items: stretch;
+    gap: 0.5rem;
+
+    .fullColumn {
+      grid-column: 1 / -1;
+    }
+  }
+}
+
+@media (width <37.5rem) {
+  body {
+    font-size: 16px;
+  }
+
+  .wrapper {
+    padding-inline: 1rem;
+  }
+
+  nav {
+    .wrapper {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(4, 1fr);
+
+      .fullColumn {
+        grid-column: 1;
+      }
+    }
+  }
+}

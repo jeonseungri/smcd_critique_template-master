@@ -1,0 +1,79 @@
+:root {
+  --max-width: 90rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  color-scheme: light dark;
+  scroll-behavior: smooth;
+}
+
+body {
+  $bg: var(--bg);
+  $txt: var(--txt);
+
+  margin: 0;
+  overflow-x: hidden;
+  background: $bg;
+  color: $txt;
+  font-family: system-ui;
+  font-size: 1.125rem;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.2;
+}
+
+a {
+  $link-txt: var(--txt-primary);
+  $link-visited-txt: var(--txt-tertiary);
+
+  color: $link-txt;
+  text-decoration: none;
+
+  &:link {
+    color: $link-txt;
+  }
+
+  &:visited {
+    color: $link-visited-txt;
+  }
+
+  &:hover {
+    color: $link-txt;
+  }
+
+  &:focus {
+    color: $link-txt;
+  }
+
+  &:active {
+    color: $link-txt;
+  }
+}
+
+iframe,
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+.wrapper {
+  max-width: var(--max-width);
+  margin-inline: auto;
+  padding: 3rem 1.5rem;
+}
